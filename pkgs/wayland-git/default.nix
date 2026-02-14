@@ -24,6 +24,8 @@ gitOverride {
   postOverride = prevAttrs: {
     patches = [ ];
 
+    nativeBuildInputs = prevAttrs.nativeBuildInputs or [ ] ++ [ final.mdbook ];
+
     # Create a wrapper for xmlto to ensure --skip-validation is used
     # This is a temporary fix for XML validation errors in documentation generation
     # Upstream re-enabled validation with "doc: validate doc XML again" commit
