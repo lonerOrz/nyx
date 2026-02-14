@@ -30,7 +30,7 @@ gitOverride {
         "PANGO_PATH=${pango.out}/lib/libpango-1.0.so.0"
         "PANGOCAIRO_PATH=${pango.out}/lib/libpangocairo-1.0.so.0"
         "GOBJECT_PATH=${glib.out}/lib/libgobject-2.0.so.0"
-        "XCBCURSOR_PATH=${xorg.xcbutilcursor.out}/lib/libxcb-cursor.so.0"
+        "XCBCURSOR_PATH=${libxcb-cursor.out}/lib/libxcb-cursor.so.0"
       ];
     env =
       (prevAttrs.env or { })
