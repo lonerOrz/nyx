@@ -25,6 +25,8 @@ gitOverride (current: {
     env = prevAttrs.env // {
       RELEASE_VERSION = "";
       ZED_COMMIT_SHA = current.rev;
+
+      LIBGIT2_NO_VENDOR = "0";
     };
 
     installPhase =
